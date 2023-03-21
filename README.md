@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-# m135m-T
-=======
-<<<<<<< HEAD
-# a217m-T-uA
-=======
-# a127f-u5
+
 Exynos 850
 ==========
 a127 a217 m127 f127 a135f
@@ -20,8 +14,8 @@ CLANG_TRIPLE= ~/toolchains/proton-clang-13-clang/bin/aarch64-linux-gnu-
 2. Build
 
 make clean && make mrproper
-export PLATFORM_VERSION=11
-export ANDROID_MAJOR_VERSION=r
+export PLATFORM_VERSION=13
+export ANDROID_MAJOR_VERSION=t
 export ARCH=arm64
 make physwizz_defconfig
 make
@@ -30,8 +24,8 @@ make
 =========
 
 make clean && make mrproper
-export PLATFORM_VERSION=11
-export ANDROID_MAJOR_VERSION=r
+export PLATFORM_VERSION=13
+export ANDROID_MAJOR_VERSION=t
 export ARCH=arm64
 export DTB_LOC= ~/a127f/arch/arm64/boot/dts
 export TOOLS_LOC=$(pwd)/scripts/tools/bin
@@ -40,5 +34,4 @@ make
 
 $TOOLS_LOC/mkdtboimg.py cfg_create $DTB_LOC/dtb.img --dtb-dir $DTB_LOC/exynos $TOOLS_LOC/dtb.cfg
 
->>>>>>> 61380c137... Update README.md
->>>>>>> 1637a7619... Update README.md
+
